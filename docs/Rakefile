@@ -31,7 +31,7 @@ task test: :build do
     ],
     url_ignore: [
       "http://formulae.brew.sh",
-      %r{https://github.com/Homebrew/brew/edit/gh-pages//},
+      %r{https://github.com/blcksec/brew/edit/gh-pages//},
     ]
   ).run
 end

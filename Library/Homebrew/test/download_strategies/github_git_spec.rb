@@ -7,7 +7,7 @@ describe GitHubGitDownloadStrategy do
   subject(:strategy) { described_class.new(url, name, version) }
 
   let(:name) { "brew" }
-  let(:url) { "https://github.com/homebrew/brew.git" }
+  let(:url) { "https://github.com/blcksec/brew.git" }
   let(:version) { nil }
 
   it "parses the URL and sets the corresponding instance variables" do

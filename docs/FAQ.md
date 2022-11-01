@@ -70,7 +70,7 @@ GUI apps on macOS don’t have Homebrew's prefix in their `PATH` by default. If 
 
 ## How do I contribute to Homebrew?
 
-Read our [contribution guidelines](https://github.com/Homebrew/brew/blob/HEAD/CONTRIBUTING.md#contributing-to-homebrew).
+Read our [contribution guidelines](https://github.com/blcksec/brew/blob/HEAD/CONTRIBUTING.md#contributing-to-homebrew).
 
 ## Why do you compile everything?
 

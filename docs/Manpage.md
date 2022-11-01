@@ -2016,7 +2016,7 @@ example, run `export HOMEBREW_NO_INSECURE_REDIRECT=1` rather than just
 - `HOMEBREW_BREW_GIT_REMOTE`
   <br>Use this URL as the Homebrew/brew `git`(1) remote.
 
-  *Default:* `https://github.com/Homebrew/brew`.
+  *Default:* `https://github.com/blcksec/brew`.
 
 - `HOMEBREW_BROWSER`
   <br>Use this as the browser when opening project homepages.
@@ -2312,7 +2312,7 @@ Former maintainers with significant contributions include Claudia Pellegrino, Se
 See our issues on GitHub:
 
   * **Homebrew/brew**:
-    <br><https://github.com/Homebrew/brew/issues>
+    <br><https://github.com/blcksec/brew/issues>
 
   * **ungtb10d/homebrew-core**:
     <br><https://github.com/ungtb10d/homebrew-core/issues>

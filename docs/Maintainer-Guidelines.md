@@ -12,7 +12,7 @@ Maybe you were looking for the [Formula Cookbook](Formula-Cookbook.md) or [Cask 
 All Homebrew maintainers are encouraged to contribute to all parts of the project,
 but there are four main teams that maintainers tend to be a part of:
 
-- `brew` maintainers: this team maintains the [`Homebrew/brew`](https://github.com/Homebrew/brew) repository.
+- `brew` maintainers: this team maintains the [`Homebrew/brew`](https://github.com/blcksec/brew) repository.
   See the [Homebrew/brew Maintainer Guide](Homebrew-brew-Maintainer-Guide.md) for more details about being a `brew` maintainer.
 - Core maintainers: this team maintains the [`ungtb10d/homebrew-core`](https://github.com/ungtb10d/homebrew-core)
   repository. See the [ungtb10d/homebrew-core Maintainer Guide](Homebrew-homebrew-core-Maintainer-Guide.md)

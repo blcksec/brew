@@ -48,7 +48,7 @@ module Formatter
   #
   # Note that an option (e.g. `--foo`) may not be at the beginning of a line,
   # so we always wrap one word before an option.
-  # @see https://github.com/Homebrew/brew/pull/12672
+  # @see https://github.com/blcksec/brew/pull/12672
   # @see https://macromates.com/blog/2006/wrapping-text-with-regular-expressions/
   def format_help_text(s, width: 172)
     desc = OPTION_DESC_WIDTH

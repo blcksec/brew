@@ -17,7 +17,7 @@ describe DownloadStrategyDetector do
     end
 
     context "when given a GitHub Git URL" do
-      let(:url) { "https://github.com/homebrew/brew.git" }
+      let(:url) { "https://github.com/blcksec/brew.git" }
 
       it { is_expected.to eq(GitHubGitDownloadStrategy) }
     end

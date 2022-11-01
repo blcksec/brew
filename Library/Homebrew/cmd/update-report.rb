@@ -106,7 +106,7 @@ module Homebrew
 
     if Settings.read("donationmessage") != "true" && !args.quiet?
       ohai "Homebrew is run entirely by unpaid volunteers. Please consider donating:"
-      puts "  #{Formatter.url("https://github.com/Homebrew/brew#donations")}\n\n"
+      puts "  #{Formatter.url("https://github.com/blcksec/brew#donations")}\n\n"
 
       # Consider the message possibly missed if not a TTY.
       Settings.write "donationmessage", true if $stdout.tty?
@@ -259,7 +259,7 @@ module Homebrew
 
     puts <<~EOS
       The #{new_tag} changelog can be found at:
-        #{Formatter.url("https://github.com/Homebrew/brew/releases/tag/#{new_tag}")}
+        #{Formatter.url("https://github.com/blcksec/brew/releases/tag/#{new_tag}")}
     EOS
   end
 

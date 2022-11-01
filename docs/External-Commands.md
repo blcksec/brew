@@ -36,7 +36,7 @@ An executable script for a command named `extcmd` should be named `brew-extcmd`.
 
 ## Providing `--help`
 
-All internal and external Homebrew commands can provide styled `--help` output by using Homebrew’s [argument parser](https://rubydoc.brew.sh/Homebrew/CLI/Parser.html), as seen in the [`brew services` command](https://github.com/ungtb10d/homebrew-services/blob/HEAD/cmd/services.rb); or by including lines starting with `#:` (a comment then `:` character in both Bash and Ruby), as seen in the [header of `update.sh`](https://github.com/Homebrew/brew/blob/cf7def0c68903814c6b4e04a55fe8f3cb3f5605e/Library/Homebrew/cmd/update.sh#L1-L10), which is printed with `brew update --help`.
+All internal and external Homebrew commands can provide styled `--help` output by using Homebrew’s [argument parser](https://rubydoc.brew.sh/Homebrew/CLI/Parser.html), as seen in the [`brew services` command](https://github.com/ungtb10d/homebrew-services/blob/HEAD/cmd/services.rb); or by including lines starting with `#:` (a comment then `:` character in both Bash and Ruby), as seen in the [header of `update.sh`](https://github.com/blcksec/brew/blob/cf7def0c68903814c6b4e04a55fe8f3cb3f5605e/Library/Homebrew/cmd/update.sh#L1-L10), which is printed with `brew update --help`.
 
 ## Unofficial external commands
 
@@ -107,9 +107,9 @@ Do something. Place a description here.
   -h, --help                       Show this message.
 ```
 
-The usage string is automatically generated based on the specified number and type of named arguments (see below for more details on specifying named arguments). The generated usage string can be overridden by passing the correct usage string to the `usage_banner` method (placed just before the `description` method). See the [`brew tap` command](https://github.com/Homebrew/brew/blob/HEAD/Library/Homebrew/cmd/tap.rb) for an example.
+The usage string is automatically generated based on the specified number and type of named arguments (see below for more details on specifying named arguments). The generated usage string can be overridden by passing the correct usage string to the `usage_banner` method (placed just before the `description` method). See the [`brew tap` command](https://github.com/blcksec/brew/blob/HEAD/Library/Homebrew/cmd/tap.rb) for an example.
 
-Use the `named_args` method to specify the type and number of named arguments that are expected. Pass either a symbol to indicate the type of argument expected, an array of symbols to indicate that multiple types should be expected, or an array of strings to specify which specific options should be expected (see the [`brew analytics` command](https://github.com/Homebrew/brew/blob/HEAD/Library/Homebrew/cmd/analytics.rb) for an example of this).
+Use the `named_args` method to specify the type and number of named arguments that are expected. Pass either a symbol to indicate the type of argument expected, an array of symbols to indicate that multiple types should be expected, or an array of strings to specify which specific options should be expected (see the [`brew analytics` command](https://github.com/blcksec/brew/blob/HEAD/Library/Homebrew/cmd/analytics.rb) for an example of this).
 
 Pass an integer to the `number`, `min`, or `max` parameter of `named_args` to specify the number of named arguments that are expected. See the following examples:
 
@@ -133,4 +133,4 @@ named_args :tap, max: 1
 named_args min: 1, max: 2
 ```
 
-Named arguments can be accessed by calling `args.named`. Check out the internal [commands](https://github.com/Homebrew/brew/tree/HEAD/Library/Homebrew/cmd) and [developer commands](https://github.com/Homebrew/brew/tree/HEAD/Library/Homebrew/dev-cmd) for more usage examples.
+Named arguments can be accessed by calling `args.named`. Check out the internal [commands](https://github.com/blcksec/brew/tree/HEAD/Library/Homebrew/cmd) and [developer commands](https://github.com/blcksec/brew/tree/HEAD/Library/Homebrew/dev-cmd) for more usage examples.

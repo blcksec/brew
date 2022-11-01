@@ -4,7 +4,7 @@
 
 Meeting convened at 20:00 UTC.
 
-Shaun Jackman moved to amend the governance document as per PR <https://github.com/Homebrew/brew/pull/10137>.
+Shaun Jackman moved to amend the governance document as per PR <https://github.com/blcksec/brew/pull/10137>.
 
 Votes in favour: 32
 Votes opposed: 1

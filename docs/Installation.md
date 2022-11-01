@@ -53,13 +53,13 @@ Technically, you can just extract (or `git clone`) Homebrew wherever you want. H
 **TL;DR: pick another prefix at your peril!**
 
 ```sh
-mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+mkdir homebrew && curl -L https://github.com/blcksec/brew/tarball/master | tar xz --strip 1 -C homebrew
 ```
 
 or:
 
 ```sh
-git clone https://github.com/Homebrew/brew homebrew
+git clone https://github.com/blcksec/brew homebrew
 ```
 
 then:

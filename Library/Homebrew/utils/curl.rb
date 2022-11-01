@@ -279,7 +279,7 @@ module Utils
       end
 
       unless details[:status_code]
-        # Hack around https://github.com/Homebrew/brew/issues/3199
+        # Hack around https://github.com/blcksec/brew/issues/3199
         return if MacOS.version == :el_capitan
 
         return "The #{url_type} #{url} is not reachable"
@@ -290,7 +290,7 @@ module Utils
           url_protected_by_cloudflare?(response) || url_protected_by_incapsula?(response)
         end
 
-        # https://github.com/Homebrew/brew/issues/13789
+        # https://github.com/blcksec/brew/issues/13789
         # If the `:homepage` of a formula is private, it will fail an `audit`
         # since there's no way to specify a `strategy` with `using:` and
         # GitHub does not authorize access to the web UI using token

@@ -1110,7 +1110,7 @@ Example of using `cookies:`: [java.rb](https://github.com/ungtb10d/homebrew-cask
 
 Example of using `referer:`: [rrootage.rb](https://github.com/ungtb10d/homebrew-cask/blob/312ae841f1f1b2ec07f4d88b7dfdd7fbdf8d4f94/Casks/rrootage.rb#L5)
 
-Example of using `header:`: [issue-325182724](https://github.com/Homebrew/brew/pull/6545#issue-325182724)
+Example of using `header:`: [issue-325182724](https://github.com/blcksec/brew/pull/6545#issue-325182724)
 
 #### When URL and Homepage Domains Differ, Add `verified:`
 

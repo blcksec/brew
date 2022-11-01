@@ -83,11 +83,11 @@ class LinkageChecker
     end
 
     # We build all formulae with an RPATH that includes the gcc formula's runtime lib directory.
-    # See: https://github.com/Homebrew/brew/blob/e689cc07/Library/Homebrew/extend/os/linux/extend/ENV/super.rb#L53
+    # See: https://github.com/blcksec/brew/blob/e689cc07/Library/Homebrew/extend/os/linux/extend/ENV/super.rb#L53
     # This results in formulae showing linkage with gcc whenever it is installed, even if no dependency is declared.
     # See discussions at:
-    #   https://github.com/Homebrew/brew/pull/13659
-    #   https://github.com/Homebrew/brew/pull/13796
+    #   https://github.com/blcksec/brew/pull/13659
+    #   https://github.com/blcksec/brew/pull/13796
     # TODO: Find a nicer way to handle this. (e.g. examining the ELF file to determine the required libstdc++.)
     @undeclared_deps.delete("gcc")
   end

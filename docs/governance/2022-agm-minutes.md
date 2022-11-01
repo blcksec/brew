@@ -20,7 +20,7 @@
   - Sean Molenaar and Misty De Méo were re-elected.
 
 - 19:50 Governance Changes Voting Results (5 min, Issy Long)
-  - The governance changes (<https://github.com/Homebrew/brew/pull/13073>) passed.
+  - The governance changes (<https://github.com/blcksec/brew/pull/13073>) passed.
 
 ## Member presentations and discussions
 

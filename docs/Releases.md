@@ -2,12 +2,12 @@
 
 Since Homebrew 1.0.0 most Homebrew users (those who haven't run a `dev-cmd` or
 set `HOMEBREW_DEVELOPER=1` which is ~99.9% based on analytics data) require tags
-on the [Homebrew/brew repository](https://github.com/homebrew/brew)
+on the [Homebrew/brew repository](https://github.com/blcksec/brew)
 in order to get new versions of Homebrew. There are a few steps in making a new
 Homebrew release:
 
-1. Check the [Homebrew/brew pull requests](https://github.com/homebrew/brew/pulls),
-   [issues](https://github.com/homebrew/brew/issues),
+1. Check the [Homebrew/brew pull requests](https://github.com/blcksec/brew/pulls),
+   [issues](https://github.com/blcksec/brew/issues),
    [ungtb10d/homebrew-core issues](https://github.com/ungtb10d/homebrew-core/issues) and
    [Homebrew/discussions (forum)](https://github.com/homebrew/discussions/discussions) to see if there is
    anything pressing that needs to be fixed or merged before the next release.
@@ -19,7 +19,7 @@ Homebrew release:
    branch.
 3. Run `brew release` to create a new draft release. For major or minor version bumps,
    pass `--major` or `--minor`, respectively.
-4. Publish the draft release on [GitHub](https://github.com/Homebrew/brew/releases).
+4. Publish the draft release on [GitHub](https://github.com/blcksec/brew/releases).
 
 If this is a major or minor release (e.g. X.0.0 or X.Y.0) then there are a few more steps:
 
@@ -28,7 +28,7 @@ If this is a major or minor release (e.g. X.0.0 or X.Y.0) then there are a few m
    any new `odeprecations` that are desired. Also delete any command argument
    definitions that pass `replacement: ...`.
 2. Write up a release notes blog post to <https://brew.sh>
-   e.g. [brew.sh#319](https://github.com/Homebrew/brew.sh/pull/319).
+   e.g. [brew.sh#319](https://github.com/blcksec/brew.sh/pull/319).
    This should use the output from `brew release [--major|--minor]` as input but
    have the wording adjusted to be more human readable and explain not just what has changed but why.
 3. When the release has shipped and the blog post has been merged, tweet the

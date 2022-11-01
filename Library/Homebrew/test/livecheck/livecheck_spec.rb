@@ -7,7 +7,7 @@ describe Homebrew::Livecheck do
   subject(:livecheck) { described_class }
 
   let(:cask_url) { "https://brew.sh/test-0.0.1.dmg" }
-  let(:head_url) { "https://github.com/Homebrew/brew.git" }
+  let(:head_url) { "https://github.com/blcksec/brew.git" }
   let(:homepage_url) { "https://brew.sh" }
   let(:livecheck_url) { "https://formulae.brew.sh/api/formula/ruby.json" }
   let(:stable_url) { "https://brew.sh/test-0.0.1.tgz" }
@@ -18,7 +18,7 @@ describe Homebrew::Livecheck do
       desc "Test formula"
       homepage "https://brew.sh"
       url "https://brew.sh/test-0.0.1.tgz"
-      head "https://github.com/Homebrew/brew.git"
+      head "https://github.com/blcksec/brew.git"
 
       livecheck do
         url "https://formulae.brew.sh/api/formula/ruby.json"
@@ -184,9 +184,9 @@ describe Homebrew::Livecheck do
     let(:f_duplicate_urls) do
       formula("test_duplicate_urls") do
         desc "Test formula with a duplicate URL"
-        homepage "https://github.com/Homebrew/brew.git"
+        homepage "https://github.com/blcksec/brew.git"
         url "https://brew.sh/test-0.0.1.tgz"
-        head "https://github.com/Homebrew/brew.git"
+        head "https://github.com/blcksec/brew.git"
       end
     end
 
@@ -264,7 +264,7 @@ describe Homebrew::Livecheck do
   end
 
   describe "::preprocess_url" do
-    let(:github_git_url_with_extension) { "https://github.com/Homebrew/brew.git" }
+    let(:github_git_url_with_extension) { "https://github.com/blcksec/brew.git" }
 
     it "returns the unmodified URL for an unparseable URL" do
       # Modeled after the `head` URL in the `ncp` formula
@@ -278,13 +278,13 @@ describe Homebrew::Livecheck do
     end
 
     it "returns the Git repository URL for a GitHub URL not ending in .git" do
-      expect(livecheck.preprocess_url("https://github.com/Homebrew/brew"))
+      expect(livecheck.preprocess_url("https://github.com/blcksec/brew"))
         .to eq(github_git_url_with_extension)
     end
 
     it "returns the unmodified URL for a GitHub /releases/latest URL" do
-      expect(livecheck.preprocess_url("https://github.com/Homebrew/brew/releases/latest"))
-        .to eq("https://github.com/Homebrew/brew/releases/latest")
+      expect(livecheck.preprocess_url("https://github.com/blcksec/brew/releases/latest"))
+        .to eq("https://github.com/blcksec/brew/releases/latest")
     end
 
     it "returns the Git repository URL for a GitHub AWS URL" do
@@ -298,12 +298,12 @@ describe Homebrew::Livecheck do
     end
 
     it "returns the Git repository URL for a GitHub tag archive URL" do
-      expect(livecheck.preprocess_url("https://github.com/Homebrew/brew/archive/1.0.0.tar.gz"))
+      expect(livecheck.preprocess_url("https://github.com/blcksec/brew/archive/1.0.0.tar.gz"))
         .to eq(github_git_url_with_extension)
     end
 
     it "returns the Git repository URL for a GitHub release archive URL" do
-      expect(livecheck.preprocess_url("https://github.com/Homebrew/brew/releases/download/1.0.0/brew-1.0.0.tar.gz"))
+      expect(livecheck.preprocess_url("https://github.com/blcksec/brew/releases/download/1.0.0/brew-1.0.0.tar.gz"))
         .to eq(github_git_url_with_extension)
     end
 

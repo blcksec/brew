@@ -114,6 +114,6 @@ a follow-up PR to make the necessary changes will be opened automatically by [@B
 once the original PR is merged. These follow-up PRs can be merged immediately if the changes seem correct.
 
 An update can be requested manually by triggering the workflow from the
-[Update maintainers, manpage and completions](https://github.com/Homebrew/brew/actions/workflows/update-man-completions.yml)
+[Update maintainers, manpage and completions](https://github.com/blcksec/brew/actions/workflows/update-man-completions.yml)
 section under the "Actions" tab. Click on the "Run workflow" dropdown and then the "Run workflow" button.
 A PR will be opened shortly if there are any changes.

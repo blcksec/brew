@@ -16,7 +16,7 @@ To enable users to do rich queries without the problems above, Homebrew provides
 
 The default schema version is `v1`, which returns info about formulae; specify `--json=v2` to include both formulae and casks. Note that fields may be added to the schema as needed without incrementing the schema. Any significant breaking changes will cause a change to the schema version.
 
-The schema itself is not currently documented outside of the code in [`formula.rb`](https://github.com/Homebrew/brew/blob/2e6b6ab3a20da503ba2a22a37fdd6bd936d818ed/Library/Homebrew/formula.rb#L1922-L2017) that generates it.
+The schema itself is not currently documented outside of the code in [`formula.rb`](https://github.com/blcksec/brew/blob/2e6b6ab3a20da503ba2a22a37fdd6bd936d818ed/Library/Homebrew/formula.rb#L1922-L2017) that generates it.
 
 ## Examples
 

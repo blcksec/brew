@@ -44,9 +44,9 @@ class Cleaner
     # #100190][2], and [Keep `info/#{f.name}/dir` files in cleaner by
     # timvisher][3] for more info.
     #
-    # [1]: https://github.com/Homebrew/brew/pull/11597
+    # [1]: https://github.com/blcksec/brew/pull/11597
     # [2]: https://github.com/ungtb10d/homebrew-core/issues/100190
-    # [3]: https://github.com/Homebrew/brew/pull/13215
+    # [3]: https://github.com/blcksec/brew/pull/13215
     Dir.glob(@f.info/"**/dir").each do |f|
       info_dir_file = Pathname(f)
       next unless info_dir_file.file?

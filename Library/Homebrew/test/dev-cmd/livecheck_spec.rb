@@ -9,7 +9,7 @@ describe "brew livecheck" do
   it "reports the latest version of a Formula", :integration_test, :needs_network do
     content = <<~RUBY
       desc "Some test"
-      homepage "https://github.com/Homebrew/brew"
+      homepage "https://github.com/blcksec/brew"
       url "https://brew.sh/test-1.0.0.tgz"
     RUBY
     setup_test_formula("test", content)
