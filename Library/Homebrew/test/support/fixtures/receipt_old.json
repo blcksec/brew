@@ -9,7 +9,7 @@
   ],
   "built_as_bottle": false,
   "poured_from_bottle": true,
-  "tapped_from": "Homebrew/homebrew",
+  "tapped_from": "ungtb10d/homebrew",
   "time": 1403827774,
   "HEAD": "deadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
   "stdlib": "libcxx",

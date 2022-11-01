@@ -28,14 +28,14 @@ describe "brew info" do
 
   describe Homebrew do
     describe "::github_remote_path" do
-      let(:remote) { "https://github.com/Homebrew/homebrew-core" }
+      let(:remote) { "https://github.com/ungtb10d/homebrew-core" }
 
       specify "returns correct URLs" do
         expect(described_class.github_remote_path(remote, "Formula/git.rb"))
-          .to eq("https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/git.rb")
+          .to eq("https://github.com/ungtb10d/homebrew-core/blob/HEAD/Formula/git.rb")
 
         expect(described_class.github_remote_path("#{remote}.git", "Formula/git.rb"))
-          .to eq("https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/git.rb")
+          .to eq("https://github.com/ungtb10d/homebrew-core/blob/HEAD/Formula/git.rb")
 
         expect(described_class.github_remote_path("git@github.com:user/repo", "foo.rb"))
           .to eq("https://github.com/user/repo/blob/HEAD/foo.rb")

@@ -2,7 +2,7 @@
 
 Did you find something in Homebrew that wasn't the latest version? You can help yourself and others by submitting a pull request to update the formula.
 
-First, check the pull requests in the Homebrew tap repositories to make sure a PR isn't already open. If you're submitting a [formula](Formula-Cookbook.md#homebrew-terminology), check [homebrew-core](https://github.com/Homebrew/homebrew-core/pulls). If you're submitting a [cask](Formula-Cookbook.md#homebrew-terminology), check [homebrew-cask](https://github.com/Homebrew/homebrew-cask/pulls). You may also want to look through closed pull requests in the repositories, as sometimes packages run into problems preventing them from being updated and it's better to be aware of any issues before putting significant effort into an update.
+First, check the pull requests in the Homebrew tap repositories to make sure a PR isn't already open. If you're submitting a [formula](Formula-Cookbook.md#homebrew-terminology), check [homebrew-core](https://github.com/ungtb10d/homebrew-core/pulls). If you're submitting a [cask](Formula-Cookbook.md#homebrew-terminology), check [homebrew-cask](https://github.com/ungtb10d/homebrew-cask/pulls). You may also want to look through closed pull requests in the repositories, as sometimes packages run into problems preventing them from being updated and it's better to be aware of any issues before putting significant effort into an update.
 
 The [How To Open a Homebrew Pull Request](How-To-Open-a-Homebrew-Pull-Request.md) documentation should explain most everything you need to know about the process of creating a PR for a version update. For simple updates, this typically involves changing the `url` and `sha256` values.
 

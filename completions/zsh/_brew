@@ -135,7 +135,7 @@ __brew_internal_commands() {
     '--env:Summarise Homebrew'\''s build environment as a plain list'
     '--prefix:Display Homebrew'\''s install path'
     '--repository:Display where Homebrew'\''s git repository is located'
-    '--version:Print the version numbers of Homebrew, Homebrew/homebrew-core and Homebrew/homebrew-cask (if tapped) to standard output'
+    '--version:Print the version numbers of Homebrew, ungtb10d/homebrew-core and ungtb10d/homebrew-cask (if tapped) to standard output'
     'analytics:Control Homebrew'\''s anonymous aggregate user behaviour analytics'
     'audit:Check formula for Homebrew coding style violations'
     'autoremove:Uninstall formulae that were only installed as a dependency of another formula and are now no longer needed'

@@ -10,7 +10,7 @@ describe "brew tap-info" do
     setup_test_tap
 
     expect { brew "tap-info", "--json=v1", "--installed" }
-      .to output(%r{https://github\.com/Homebrew/homebrew-foo}).to_stdout
+      .to output(%r{https://github\.com/ungtb10d/homebrew-foo}).to_stdout
       .and not_to_output.to_stderr
       .and be_a_success
   end

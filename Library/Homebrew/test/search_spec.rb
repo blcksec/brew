@@ -33,13 +33,13 @@ describe Homebrew::Search do
           {
             "path"       => "Formula/some-formula.rb",
             "repository" => {
-              "full_name" => "Homebrew/homebrew-foo",
+              "full_name" => "ungtb10d/homebrew-foo",
             },
           },
           {
             "path"       => "Casks/some-cask.rb",
             "repository" => {
-              "full_name" => "Homebrew/homebrew-bar",
+              "full_name" => "ungtb10d/homebrew-bar",
             },
           },
         ],

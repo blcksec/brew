@@ -17,7 +17,7 @@
   "time": 1403827774,
   "source_modified_time": 1628303333,
   "HEAD": "deadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
-  "alias_path": "/usr/local/Library/Taps/homebrew/homebrew-core/Aliases/test-formula",
+  "alias_path": "/usr/local/Library/Taps/ungtb10d/homebrew-core/Aliases/test-formula",
   "stdlib": "libcxx",
   "compiler": "clang",
   "runtime_dependencies": [
@@ -27,7 +27,7 @@
     }
   ],
   "source": {
-      "path": "/usr/local/Library/Taps/homebrew/homebrew-core/Formula/foo.rb",
+      "path": "/usr/local/Library/Taps/ungtb10d/homebrew-core/Formula/foo.rb",
       "tap": "homebrew/core",
       "spec": "stable",
       "versions": {

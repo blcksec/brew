@@ -2,7 +2,7 @@
 
 A [tap](Taps.md) is Homebrew-speak for a Git repository containing additional formulae.
 
-Homebrew has the capability to add (and remove) multiple taps to your local installation with the `brew tap` and `brew untap` commands; run `man brew` in your terminal for usage information. The main repository at <https://github.com/Homebrew/homebrew-core>, often called `homebrew/core`, is always built-in.
+Homebrew has the capability to add (and remove) multiple taps to your local installation with the `brew tap` and `brew untap` commands; run `man brew` in your terminal for usage information. The main repository at <https://github.com/ungtb10d/homebrew-core>, often called `homebrew/core`, is always built-in.
 
 Your taps are Git repositories located at `$(brew --repository)/Library/Taps`.
 

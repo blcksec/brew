@@ -431,7 +431,7 @@ EOS
   fi
 
   [[ -f "${HOMEBREW_CORE_REPOSITORY}/.git/shallow" ]] && HOMEBREW_CORE_SHALLOW=1
-  [[ -f "${HOMEBREW_LIBRARY}/Taps/homebrew/homebrew-cask/.git/shallow" ]] && HOMEBREW_CASK_SHALLOW=1
+  [[ -f "${HOMEBREW_LIBRARY}/Taps/ungtb10d/homebrew-cask/.git/shallow" ]] && HOMEBREW_CASK_SHALLOW=1
   if [[ -n "${HOMEBREW_CORE_SHALLOW}" && -n "${HOMEBREW_CASK_SHALLOW}" ]]
   then
     SHALLOW_COMMAND_PHRASE="These commands"
@@ -449,11 +449,11 @@ ${HOMEBREW_CORE_SHALLOW:+
   homebrew-cask is a shallow clone.}
 To \`brew update\`, first run:${HOMEBREW_CORE_SHALLOW:+
   git -C "${HOMEBREW_CORE_REPOSITORY}" fetch --unshallow}${HOMEBREW_CASK_SHALLOW:+
-  git -C "${HOMEBREW_LIBRARY}/Taps/homebrew/homebrew-cask" fetch --unshallow}
+  git -C "${HOMEBREW_LIBRARY}/Taps/ungtb10d/homebrew-cask" fetch --unshallow}
 ${SHALLOW_COMMAND_PHRASE} may take a few minutes to run due to the large size of the ${SHALLOW_REPO_PHRASE}.
 This restriction has been made on GitHub's request because updating shallow
 clones is an extremely expensive operation due to the tree layout and traffic of
-Homebrew/homebrew-core and Homebrew/homebrew-cask. We don't do this for you
+ungtb10d/homebrew-core and ungtb10d/homebrew-cask. We don't do this for you
 automatically to avoid repeatedly performing an expensive unshallow operation in
 CI systems (which should instead be fixed to not use shallow clones). Sorry for
 the inconvenience!
@@ -712,7 +712,7 @@ EOS
     if [[ -n "${HOMEBREW_INSTALL_FROM_API}" ]] &&
        [[ -z "${HOMEBREW_DEVELOPER}" || -n "${HOMEBREW_UPDATE_AUTO}" ]] &&
        [[ "${DIR}" == "${HOMEBREW_CORE_REPOSITORY}" ||
-          "${DIR}" == "${HOMEBREW_LIBRARY}/Taps/homebrew/homebrew-cask" ]]
+          "${DIR}" == "${HOMEBREW_LIBRARY}/Taps/ungtb10d/homebrew-cask" ]]
     then
       continue
     fi

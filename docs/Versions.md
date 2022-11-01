@@ -1,9 +1,9 @@
 # Versions
 
-[homebrew/core](https://github.com/homebrew/homebrew-core) supports multiple versions of formulae with a special naming format. For example, the formula for GCC 6 is named `gcc@6.rb` and begins with `class GccAT6 < Formula`.
+[homebrew/core](https://github.com/ungtb10d/homebrew-core) supports multiple versions of formulae with a special naming format. For example, the formula for GCC 6 is named `gcc@6.rb` and begins with `class GccAT6 < Formula`.
 
 ## Acceptable versioned formulae
-Versioned formulae we include in [homebrew/core](https://github.com/homebrew/homebrew-core) must meet the following standards:
+Versioned formulae we include in [homebrew/core](https://github.com/ungtb10d/homebrew-core) must meet the following standards:
 
 * Versioned software should build on all Homebrew's supported versions of macOS.
 * Versioned formulae should differ in major/minor (not patch) versions from the current stable release. This is because patch versions indicate bug or security updates, and we want to ensure you apply security updates.
@@ -21,6 +21,6 @@ Versioned formulae we include in [homebrew/core](https://github.com/homebrew/hom
 
 Homebrew's versions should not be used to "pin" formulae to your personal requirements. You should instead create your own [tap](How-to-Create-and-Maintain-a-Tap.md) for formulae you or your organisation wish to control the versioning of, or those that do not meet the above standards. Software that has regular API or ABI breaking releases still needs to meet all the above requirements; that a `brew upgrade` has broken something for you is not an argument for us to add and maintain a formula for you.
 
-If there is a formula that currently exists in the Homebrew/homebrew-core repository or has existed in the past (i.e. was migrated or deleted), you can recover it for your own use with the `brew extract` command. This will copy the desired version of the formula into a custom tap. For example, if your project depends on `automake` 1.12 instead of the most recent version, you can obtain the `automake` formula at version 1.12 by running `brew extract automake <YOUR_GITHUB_USER>/<YOUR_TAP_REPOSITORY_NAME> --version=1.12`. Formulae obtained this way may contain deprecated, disabled or removed Homebrew syntax (e.g. checksums may be `sha1` instead of `sha256`); the `brew extract` command does not edit or update formulae to meet current standards and style requirements.
+If there is a formula that currently exists in the ungtb10d/homebrew-core repository or has existed in the past (i.e. was migrated or deleted), you can recover it for your own use with the `brew extract` command. This will copy the desired version of the formula into a custom tap. For example, if your project depends on `automake` 1.12 instead of the most recent version, you can obtain the `automake` formula at version 1.12 by running `brew extract automake <YOUR_GITHUB_USER>/<YOUR_TAP_REPOSITORY_NAME> --version=1.12`. Formulae obtained this way may contain deprecated, disabled or removed Homebrew syntax (e.g. checksums may be `sha1` instead of `sha256`); the `brew extract` command does not edit or update formulae to meet current standards and style requirements.
 
-We may temporarily add versioned formulae for our own needs that do not meet these standards in [homebrew/core](https://github.com/homebrew/homebrew-core). The presence of a versioned formula there does not imply it will be maintained indefinitely or that we are willing to accept any more versions that do not meet the requirements above.
+We may temporarily add versioned formulae for our own needs that do not meet these standards in [homebrew/core](https://github.com/ungtb10d/homebrew-core). The presence of a versioned formula there does not imply it will be maintained indefinitely or that we are willing to accept any more versions that do not meet the requirements above.

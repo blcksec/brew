@@ -48,7 +48,7 @@ describe Utils::Svn do
       end
 
       it "returns true when remote exists", :needs_network, :needs_svn do
-        expect(described_class).to be_remote_exists("https://github.com/Homebrew/install")
+        expect(described_class).to be_remote_exists("https://github.com/ungtb10d/install")
       end
     end
   end

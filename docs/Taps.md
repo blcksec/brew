@@ -22,7 +22,7 @@ but the command isn't limited to any one location.
 * `brew tap <user/repo>` makes a clone of the repository at
   _https://github.com/\<user>/homebrew-\<repo>_ into `$(brew --repository)/Library/Taps`.
   After that, `brew` will be able to work with those formulae as if they were in Homebrew's
-  [homebrew/core](https://github.com/Homebrew/homebrew-core) canonical repository.
+  [homebrew/core](https://github.com/ungtb10d/homebrew-core) canonical repository.
   You can install and uninstall them with `brew [un]install`, and the formulae are
   automatically updated when you run `brew update`. (See below for details
   about how `brew tap` handles the names of repositories.)
@@ -57,7 +57,7 @@ back the "homebrew-" prefix whenever it's necessary.
 ## Formula with duplicate names
 
 If your tap contains a formula that is also present in
-[homebrew/core](https://github.com/Homebrew/homebrew-core), that's fine,
+[homebrew/core](https://github.com/ungtb10d/homebrew-core), that's fine,
 but you would need to specify its fully qualified name in the form
 `<user>/<repo>/<formula>` to install your version.
 

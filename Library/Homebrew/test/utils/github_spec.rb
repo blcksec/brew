@@ -78,7 +78,7 @@ describe GitHub do
       url = described_class.get_artifact_url(
         described_class.get_workflow_run("Homebrew", "homebrew-core", "79751", artifact_name: "bottles"),
       )
-      expect(url).to eq("https://api.github.com/repos/Homebrew/homebrew-core/actions/artifacts/70494047/zip")
+      expect(url).to eq("https://api.github.com/repos/ungtb10d/homebrew-core/actions/artifacts/70494047/zip")
     end
   end
 

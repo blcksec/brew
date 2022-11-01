@@ -14,16 +14,16 @@ but there are four main teams that maintainers tend to be a part of:
 
 - `brew` maintainers: this team maintains the [`Homebrew/brew`](https://github.com/Homebrew/brew) repository.
   See the [Homebrew/brew Maintainer Guide](Homebrew-brew-Maintainer-Guide.md) for more details about being a `brew` maintainer.
-- Core maintainers: this team maintains the [`Homebrew/homebrew-core`](https://github.com/Homebrew/homebrew-core)
-  repository. See the [Homebrew/homebrew-core Maintainer Guide](Homebrew-homebrew-core-Maintainer-Guide.md)
+- Core maintainers: this team maintains the [`ungtb10d/homebrew-core`](https://github.com/ungtb10d/homebrew-core)
+  repository. See the [ungtb10d/homebrew-core Maintainer Guide](Homebrew-homebrew-core-Maintainer-Guide.md)
   for more details about being a core maintainer.
-- Linux maintainers: this team maintains the [`Homebrew/homebrew-core`](https://github.com/Homebrew/homebrew-core)
+- Linux maintainers: this team maintains the [`ungtb10d/homebrew-core`](https://github.com/ungtb10d/homebrew-core)
   repository on Linux.
-- Cask maintainers: this team maintains the [`Homebrew/homebrew-cask`](https://github.com/Homebrew/homebrew-cask),
-  [`Homebrew/homebrew-cask-drivers`](https://github.com/Homebrew/homebrew-cask-drivers),
-  [`Homebrew/homebrew-cask-fonts`](https://github.com/Homebrew/homebrew-cask-fonts) and
-  [`Homebrew/homebrew-cask-versions`](https://github.com/Homebrew/homebrew-cask-versions) repositories.
-  See the [Homebrew/homebrew-cask Maintainer Guide](Homebrew-homebrew-cask-Maintainer-Guide.md)
+- Cask maintainers: this team maintains the [`ungtb10d/homebrew-cask`](https://github.com/ungtb10d/homebrew-cask),
+  [`ungtb10d/homebrew-cask-drivers`](https://github.com/ungtb10d/homebrew-cask-drivers),
+  [`ungtb10d/homebrew-cask-fonts`](https://github.com/ungtb10d/homebrew-cask-fonts) and
+  [`ungtb10d/homebrew-cask-versions`](https://github.com/ungtb10d/homebrew-cask-versions) repositories.
+  See the [ungtb10d/homebrew-cask Maintainer Guide](Homebrew-homebrew-cask-Maintainer-Guide.md)
   for more details about being a cask maintainer.
 
 These documents are meant to serve as guiding principles. As a maintainer, you can make a call to either
@@ -79,7 +79,7 @@ PRs that are an "enhancement" to existing functionality i.e. not a fix to an ope
 
 If a maintainer is on holiday/vacation/sick during this time and leaves comments after they are back: please treat post-merge PR comments and feedback as you would left within the time period and follow-up with another PR to address their requests (if agreed).
 
-The vast majority of `Homebrew/homebrew-core` PRs are bug fixes or version bumps which can be self-merged once CI has completed.
+The vast majority of `ungtb10d/homebrew-core` PRs are bug fixes or version bumps which can be self-merged once CI has completed.
 
 ## Communication
 

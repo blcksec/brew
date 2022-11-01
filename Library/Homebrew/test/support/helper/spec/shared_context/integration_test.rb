@@ -197,11 +197,11 @@ RSpec.shared_context "integration test" do # rubocop:disable RSpec/ContextWordin
   end
 
   def setup_test_tap
-    path = Tap::TAP_DIRECTORY/"homebrew/homebrew-foo"
+    path = Tap::TAP_DIRECTORY/"ungtb10d/homebrew-foo"
     path.mkpath
     path.cd do
       system "git", "init"
-      system "git", "remote", "add", "origin", "https://github.com/Homebrew/homebrew-foo"
+      system "git", "remote", "add", "origin", "https://github.com/ungtb10d/homebrew-foo"
       FileUtils.touch "readme"
       system "git", "add", "--all"
       system "git", "commit", "-m", "init"

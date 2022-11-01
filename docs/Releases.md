@@ -8,12 +8,12 @@ Homebrew release:
 
 1. Check the [Homebrew/brew pull requests](https://github.com/homebrew/brew/pulls),
    [issues](https://github.com/homebrew/brew/issues),
-   [Homebrew/homebrew-core issues](https://github.com/homebrew/homebrew-core/issues) and
+   [ungtb10d/homebrew-core issues](https://github.com/ungtb10d/homebrew-core/issues) and
    [Homebrew/discussions (forum)](https://github.com/homebrew/discussions/discussions) to see if there is
    anything pressing that needs to be fixed or merged before the next release.
    If so, fix and merge these changes.
 2. Ensure that no code changes have happened for at least a couple of hours (ideally 4 hours),
-   at least one Homebrew/homebrew-core pull request CI job has completed successfully,
+   at least one ungtb10d/homebrew-core pull request CI job has completed successfully,
    checked the state of the Homebrew/brew `master` CI job (i.e. main jobs green or green after rerunning),
    and that you are confident there are no major regressions on the current `master`,
    branch.
@@ -42,7 +42,7 @@ If this is a major or minor release (e.g. X.0.0 or X.Y.0) then there are a few m
 
 Please do not manually create a release based on older commits on the `master` branch.
 It's very hard to judge whether these have been sufficiently tested by users or if they will
-cause negative side-effects with the current state of Homebrew/homebrew-core.
+cause negative side-effects with the current state of ungtb10d/homebrew-core.
 If a new branch is needed ASAP but there are things on `master` that cannot be released yet
 (e.g. new deprecations and you want to make a patch release) then revert the relevant PRs,
 follow the process above and then revert the reverted PRs to reapply them on `master`.

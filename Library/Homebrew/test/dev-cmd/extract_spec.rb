@@ -8,7 +8,7 @@ describe "brew extract" do
 
   context "when extracting a formula" do
     let!(:target) do
-      path = Tap::TAP_DIRECTORY/"homebrew/homebrew-foo"
+      path = Tap::TAP_DIRECTORY/"ungtb10d/homebrew-foo"
       (path/"Formula").mkpath
       target = Tap.from_path(path)
       core_tap = CoreTap.new

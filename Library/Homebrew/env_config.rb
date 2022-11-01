@@ -105,8 +105,8 @@ module Homebrew
         boolean:     true,
       },
       HOMEBREW_CORE_GIT_REMOTE:                  {
-        description:  "Use this URL as the Homebrew/homebrew-core `git`(1) remote.",
-        default_text: "`https://github.com/Homebrew/homebrew-core`.",
+        description:  "Use this URL as the ungtb10d/homebrew-core `git`(1) remote.",
+        default_text: "`https://github.com/ungtb10d/homebrew-core`.",
         default:      HOMEBREW_CORE_DEFAULT_GIT_REMOTE,
       },
       HOMEBREW_CURLRC:                           {

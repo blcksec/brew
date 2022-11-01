@@ -29,8 +29,8 @@
   - Book a group dinner (which Homebrew pays for) and check for any dietary requirements
   - Ask someone to bring a conference/table microphone for people to be able to remotely participate in AGM
 - February after the AGM:
-  - Add the minutes of the AGM to https://github.com/Homebrew/homebrew-governance
-  - Create [issue in homebrew-governance](https://github.com/homebrew/homebrew-governance/issues) to ask members who did not vote in the election whether they wish to remain or step down as members
+  - Add the minutes of the AGM to https://github.com/ungtb10d/homebrew-governance
+  - Create [issue in homebrew-governance](https://github.com/ungtb10d/homebrew-governance/issues) to ask members who did not vote in the election whether they wish to remain or step down as members
     - Members that are not maintainers should be a least one of:
       - An current or previously active maintainer, PLC/TSC member or Project Leader
       - A long-standing member of the Homebrew community (e.g. been submitting good bug reports for over two years)

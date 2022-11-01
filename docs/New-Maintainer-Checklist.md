@@ -18,7 +18,7 @@ issues, or reviewing user pull requests. You should also be making contributions
 to Homebrew at least once per quarter.
 
 You should watch or regularly check Homebrew/brew and/or
-Homebrew/homebrew-core and/or Homebrew/homebrew-cask. Let us know which so we
+ungtb10d/homebrew-core and/or ungtb10d/homebrew-cask. Let us know which so we
 can grant you commit access appropriately.
 
 If you're no longer able to perform all of these tasks, please continue to
@@ -33,8 +33,8 @@ A few requests:
 - Please review the team-specific guides for whichever teams you will be a part of.
   Here are links to these guides:
     - Homebrew/brew: https://docs.brew.sh/Homebrew-brew-Maintainer-Guide
-    - Homebrew/homebrew-core: https://docs.brew.sh/Homebrew-homebrew-core-Maintainer-Guide
-    - Homebrew/homebrew-cask: https://docs.brew.sh/Homebrew-homebrew-cask-Maintainer-Guide
+    - ungtb10d/homebrew-core: https://docs.brew.sh/Homebrew-homebrew-core-Maintainer-Guide
+    - ungtb10d/homebrew-cask: https://docs.brew.sh/Homebrew-homebrew-cask-Maintainer-Guide
 - Still create your branches on your fork rather than in the main repository.
   Note GitHub's UI will create edits and reverts on the main repository if you
   make edits or click "Revert" on the Homebrew/brew repository rather than your
@@ -85,4 +85,4 @@ When admitted as members:
 
 - Invite them to the [**@Homebrew/members** team](https://github.com/orgs/Homebrew/teams/members), to give them access to the private governance repository.
 - Invite them as a single-channel guest to the #members channel on the [`machomebrew` private maintainers Slack](https://machomebrew.slack.com/admin/invites) (and ensure they've read the [communication guidelines](Maintainer-Guidelines.md#communication)) and ask them to use their real name there (rather than a pseudonym they may use on e.g. GitHub).
-- Add them to the membership list in the [homebrew-governance repository](https://github.com/Homebrew/homebrew-governance).
+- Add them to the membership list in the [homebrew-governance repository](https://github.com/ungtb10d/homebrew-governance).

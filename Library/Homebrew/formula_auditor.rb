@@ -825,7 +825,7 @@ module Homebrew
       problem <<~EOS
         #{formula.name} seems to be listed in tap_migrations.json!
         Please remove #{formula.name} from present tap & tap_migrations.json
-        before submitting it to Homebrew/homebrew-#{formula.tap.repo}.
+        before submitting it to ungtb10d/homebrew-#{formula.tap.repo}.
       EOS
     end
 

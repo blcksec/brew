@@ -87,7 +87,7 @@ class Tab < OpenStruct
     end
 
     if attributes["source"]["tap"] == "mxcl/master" ||
-       attributes["source"]["tap"] == "Homebrew/homebrew"
+       attributes["source"]["tap"] == "ungtb10d/homebrew"
       attributes["source"]["tap"] = "homebrew/core"
     end
 

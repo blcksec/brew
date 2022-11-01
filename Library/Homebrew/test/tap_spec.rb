@@ -7,7 +7,7 @@ describe Tap do
 
   subject(:homebrew_foo_tap) { described_class.new("Homebrew", "foo") }
 
-  let(:path) { Tap::TAP_DIRECTORY/"homebrew/homebrew-foo" }
+  let(:path) { Tap::TAP_DIRECTORY/"ungtb10d/homebrew-foo" }
   let(:formula_file) { path/"Formula/foo.rb" }
   let(:alias_file) { path/"Aliases/bar" }
   let(:cmd_file) { path/"cmd/brew-tap-cmd.rb" }
@@ -81,7 +81,7 @@ describe Tap do
   def setup_git_repo
     path.cd do
       system "git", "init"
-      system "git", "remote", "add", "origin", "https://github.com/Homebrew/homebrew-foo"
+      system "git", "remote", "add", "origin", "https://github.com/ungtb10d/homebrew-foo"
       system "git", "add", "--all"
       system "git", "commit", "-m", "init"
     end
@@ -107,7 +107,7 @@ describe Tap do
     }.to raise_error(/Invalid tap name/)
 
     expect {
-      described_class.fetch("homebrew/homebrew/bar")
+      described_class.fetch("ungtb10d/homebrew/bar")
     }.to raise_error(/Invalid tap name/)
 
     expect {
@@ -153,7 +153,7 @@ describe Tap do
              "https://github.com/someone/homebrew-foo"
     end
     expect(t.issues_url).to eq("https://github.com/someone/homebrew-foo/issues")
-    expect(homebrew_foo_tap.issues_url).to eq("https://github.com/Homebrew/homebrew-foo/issues")
+    expect(homebrew_foo_tap.issues_url).to eq("https://github.com/ungtb10d/homebrew-foo/issues")
 
     (Tap::TAP_DIRECTORY/"someone/homebrew-no-git").mkpath
     expect(described_class.new("someone", "no-git").issues_url).to be_nil
@@ -184,7 +184,7 @@ describe Tap do
     it "returns the remote URL" do
       setup_git_repo
 
-      expect(homebrew_foo_tap.remote).to eq("https://github.com/Homebrew/homebrew-foo")
+      expect(homebrew_foo_tap.remote).to eq("https://github.com/ungtb10d/homebrew-foo")
       expect { described_class.new("Homebrew", "bar").remote }.to raise_error(TapUnavailableError)
       expect(homebrew_foo_tap).not_to have_custom_remote
 
@@ -192,7 +192,7 @@ describe Tap do
       services_tap.path.mkpath
       services_tap.path.cd do
         system "git", "init"
-        system "git", "remote", "add", "origin", "https://github.com/Homebrew/homebrew-services"
+        system "git", "remote", "add", "origin", "https://github.com/ungtb10d/homebrew-services"
       end
       expect(services_tap).not_to be_private
     end
@@ -212,31 +212,31 @@ describe Tap do
     it "returns the remote https repository" do
       setup_git_repo
 
-      expect(homebrew_foo_tap.remote_repo).to eq("Homebrew/homebrew-foo")
+      expect(homebrew_foo_tap.remote_repo).to eq("ungtb10d/homebrew-foo")
       expect { described_class.new("Homebrew", "bar").remote_repo }.to raise_error(TapUnavailableError)
 
       services_tap = described_class.new("Homebrew", "services")
       services_tap.path.mkpath
       services_tap.path.cd do
         system "git", "init"
-        system "git", "remote", "add", "origin", "https://github.com/Homebrew/homebrew-bar"
+        system "git", "remote", "add", "origin", "https://github.com/ungtb10d/homebrew-bar"
       end
-      expect(services_tap.remote_repo).to eq("Homebrew/homebrew-bar")
+      expect(services_tap.remote_repo).to eq("ungtb10d/homebrew-bar")
     end
 
     it "returns the remote ssh repository" do
       setup_git_repo
 
-      expect(homebrew_foo_tap.remote_repo).to eq("Homebrew/homebrew-foo")
+      expect(homebrew_foo_tap.remote_repo).to eq("ungtb10d/homebrew-foo")
       expect { described_class.new("Homebrew", "bar").remote_repo }.to raise_error(TapUnavailableError)
 
       services_tap = described_class.new("Homebrew", "services")
       services_tap.path.mkpath
       services_tap.path.cd do
         system "git", "init"
-        system "git", "remote", "add", "origin", "git@github.com:Homebrew/homebrew-bar"
+        system "git", "remote", "add", "origin", "git@github.com:ungtb10d/homebrew-bar"
       end
-      expect(services_tap.remote_repo).to eq("Homebrew/homebrew-bar")
+      expect(services_tap.remote_repo).to eq("ungtb10d/homebrew-bar")
     end
 
     it "returns nil if the Tap is not a Git repository" do
@@ -544,7 +544,7 @@ describe Tap do
     end
 
     specify "files" do
-      path = Tap::TAP_DIRECTORY/"homebrew/homebrew-core"
+      path = Tap::TAP_DIRECTORY/"ungtb10d/homebrew-core"
       formula_file = core_tap.formula_dir/"foo.rb"
       core_tap.formula_dir.mkpath
       formula_file.write <<~RUBY

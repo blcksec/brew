@@ -45,7 +45,7 @@ class Cleaner
     # timvisher][3] for more info.
     #
     # [1]: https://github.com/Homebrew/brew/pull/11597
-    # [2]: https://github.com/Homebrew/homebrew-core/issues/100190
+    # [2]: https://github.com/ungtb10d/homebrew-core/issues/100190
     # [3]: https://github.com/Homebrew/brew/pull/13215
     Dir.glob(@f.info/"**/dir").each do |f|
       info_dir_file = Pathname(f)

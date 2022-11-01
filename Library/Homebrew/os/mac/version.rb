@@ -15,14 +15,14 @@ module OS
 
       # TODO: bump version when new macOS is released or announced
       # and also update references in docs/Installation.md,
-      # https://github.com/Homebrew/install/blob/HEAD/install.sh and
+      # https://github.com/ungtb10d/install/blob/HEAD/install.sh and
       # MacOSVersions::SYMBOLS
       NEWEST_UNSUPPORTED = "14"
       private_constant :NEWEST_UNSUPPORTED
 
       # TODO: bump version when new macOS is released and also update
       # references in docs/Installation.md and
-      # https://github.com/Homebrew/install/blob/HEAD/install.sh
+      # https://github.com/ungtb10d/install/blob/HEAD/install.sh
       OLDEST_SUPPORTED = "11"
       private_constant :OLDEST_SUPPORTED
 

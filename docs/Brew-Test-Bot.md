@@ -9,7 +9,7 @@ image: https://brew.sh/assets/img/brewtestbot.png
 by [our Kickstarter in 2013](https://www.kickstarter.com/projects/homebrew/brew-test-bot).
 
 It comprises three Mac Pros hosting virtual machines that run the
-[`test-bot.rb`](https://github.com/Homebrew/homebrew-test-bot/) external
+[`test-bot.rb`](https://github.com/ungtb10d/homebrew-test-bot/) external
 command to perform automated testing of commits to the master branch, pull
 requests and custom builds requested by maintainers.
 

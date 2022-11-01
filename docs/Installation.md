@@ -19,26 +19,26 @@ You can use geolocalized Git mirrors to speed up Homebrew's installation and `br
 
 ```bash
 export HOMEBREW_BREW_GIT_REMOTE="..."  # put your Git mirror of Homebrew/brew here
-export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebrew-core here
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of ungtb10d/homebrew-core here
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ungtb10d/install/master/install.sh)"
 ```
 
 The default Git remote will be used if the corresponding environment variable is unset.
 
 ## Skip Tap Cloning (beta)
 
-You can instruct Homebrew to skip cloning the Homebrew/homebrew-core tap during installation by setting the beta `HOMEBREW_INSTALL_FROM_API` environment variable with the following:
+You can instruct Homebrew to skip cloning the ungtb10d/homebrew-core tap during installation by setting the beta `HOMEBREW_INSTALL_FROM_API` environment variable with the following:
 
 ```bash
 export HOMEBREW_INSTALL_FROM_API=1
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ungtb10d/install/master/install.sh)"
 ```
 
 This will make Homebrew install formulae and casks from the `homebrew/core` and `homebrew/cask` taps using Homebrew’s API instead of local checkouts of these repositories.
 
 ## Unattended installation
 
-If you want a non-interactive run of the Homebrew installer that doesn't prompt for passwords (e.g. in automation scripts), prepend [`NONINTERACTIVE=1`](https://github.com/Homebrew/install/#install-homebrew-on-macos-or-linux) to the installation command.
+If you want a non-interactive run of the Homebrew installer that doesn't prompt for passwords (e.g. in automation scripts), prepend [`NONINTERACTIVE=1`](https://github.com/ungtb10d/install/#install-homebrew-on-macos-or-linux) to the installation command.
 
 ## Alternative Installs
 

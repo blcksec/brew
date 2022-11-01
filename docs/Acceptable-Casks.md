@@ -1,7 +1,7 @@
 # Acceptable Casks
 
 Some casks should not go in
-[homebrew/cask](https://github.com/Homebrew/homebrew-cask). But there are
+[homebrew/cask](https://github.com/ungtb10d/homebrew-cask). But there are
 additional [Interesting Taps and Forks](Interesting-Taps-and-Forks.md) and anyone can [start their own](Taps.md)!
 
 ## Finding a Home For Your Cask
@@ -24,7 +24,7 @@ We maintain separate Taps for different types of binaries. Our nomenclature is:
 
 ### Stable Versions
 
-Stable versions live in the main repository at [Homebrew/homebrew-cask](https://github.com/Homebrew/homebrew-cask). They should run on the latest release of macOS or the previous point release (High Sierra and Mojave as of late 2018).
+Stable versions live in the main repository at [ungtb10d/homebrew-cask](https://github.com/ungtb10d/homebrew-cask). They should run on the latest release of macOS or the previous point release (High Sierra and Mojave as of late 2018).
 
 ### But There Is No Stable Version!
 
@@ -32,7 +32,7 @@ When software is only available as a beta, development, or unstable version, its
 
 ### Beta, Unstable, Development, Nightly, or Legacy
 
-Alternative versions should be submitted to [Homebrew/homebrew-cask-versions](https://github.com/Homebrew/homebrew-cask-versions).
+Alternative versions should be submitted to [ungtb10d/homebrew-cask-versions](https://github.com/ungtb10d/homebrew-cask-versions).
 
 ### Regional and Localized
 
@@ -57,12 +57,12 @@ We do not accept these casks since they offer a higher-than-normal security risk
 
 ### Fonts
 
-Font Casks live in the [Homebrew/homebrew-cask-fonts](https://github.com/Homebrew/homebrew-cask-fonts) repository. See the font repo [CONTRIBUTING.md](https://github.com/Homebrew/homebrew-cask-fonts/blob/HEAD/CONTRIBUTING.md)
+Font Casks live in the [ungtb10d/homebrew-cask-fonts](https://github.com/ungtb10d/homebrew-cask-fonts) repository. See the font repo [CONTRIBUTING.md](https://github.com/ungtb10d/homebrew-cask-fonts/blob/HEAD/CONTRIBUTING.md)
 for details.
 
 ### Drivers
 
-Driver Casks live in the [Homebrew/homebrew-cask-drivers](https://github.com/Homebrew/homebrew-cask-drivers) repository. See the drivers repo [CONTRIBUTING.md](https://github.com/Homebrew/homebrew-cask-drivers/blob/master/CONTRIBUTING.md)
+Driver Casks live in the [ungtb10d/homebrew-cask-drivers](https://github.com/ungtb10d/homebrew-cask-drivers) repository. See the drivers repo [CONTRIBUTING.md](https://github.com/ungtb10d/homebrew-cask-drivers/blob/master/CONTRIBUTING.md)
 for details.
 
 ## Apps that bundle malware
@@ -91,7 +91,7 @@ Note none of these exceptions is a guarantee for inclusion, but examples of situ
 
 ## Homebrew Cask is not a discoverability service
 
-From the inception of Homebrew Cask, various requests fell under the umbrella of this reply. Though a somewhat popular request, after careful consideration on multiple occasions we’ve always come back to the same conclusion: we’re not a discoverability service and our users are expected to have reasonable knowledge about the apps they’re installing through us before doing so. For example, [grouping casks by categories](https://github.com/Homebrew/homebrew-cask/issues/5425) is not within the scope of the project.
+From the inception of Homebrew Cask, various requests fell under the umbrella of this reply. Though a somewhat popular request, after careful consideration on multiple occasions we’ve always come back to the same conclusion: we’re not a discoverability service and our users are expected to have reasonable knowledge about the apps they’re installing through us before doing so. For example, [grouping casks by categories](https://github.com/ungtb10d/homebrew-cask/issues/5425) is not within the scope of the project.
 
 Amongst other things, the logistics of such requests are unsustainable for Homebrew Cask. Before making a request of this nature, you must read through previous related issues, as well as any other issues they link to, to get a full understanding of why that is the case, and why “but project *x* does *y*” arguments aren’t applicable, and not every package manager is the same.
 
@@ -105,22 +105,22 @@ Before submitting a Cask to any of our repos, you must read [our documentation o
 
 Common reasons to reject a Cask entirely:
 
-+ We have strong reasons to believe including the Cask can put the whole project at risk. Happened only once so far, [with Popcorn Time](https://github.com/Homebrew/homebrew-cask/pull/3954).
-+ The Cask is unreasonably difficult to maintain. Examples once included [Audacity](https://github.com/Homebrew/homebrew-cask/pull/27517) and [older Java development Casks](https://github.com/Homebrew/homebrew-cask/issues/57387).
++ We have strong reasons to believe including the Cask can put the whole project at risk. Happened only once so far, [with Popcorn Time](https://github.com/ungtb10d/homebrew-cask/pull/3954).
++ The Cask is unreasonably difficult to maintain. Examples once included [Audacity](https://github.com/ungtb10d/homebrew-cask/pull/27517) and [older Java development Casks](https://github.com/ungtb10d/homebrew-cask/issues/57387).
 + The app is a trial version, and the only way to acquire the full version is through the Mac App Store.
   + Similarly (and trickier to spot), the app has moved to the Mac App Store but still provides old versions via direct download. We reject these in all official repos so users don’t get stuck using an old version, wrongly thinking they’re using the most up-to-date one (which, amongst other things, might be a security risk).
-+ The app is both open-source and CLI-only (i.e. it only uses the `binary` artifact). In that case, and [in the spirit of deduplication](https://github.com/Homebrew/homebrew-cask/issues/15603), submit it first to [Homebrew/core](https://github.com/Homebrew/homebrew-core) as a formula that builds from source. If it is rejected, you may then try again as a cask (link us to the issue so we can see the discussion and reasoning for rejection).
-+ The app is open-source and has a GUI but no compiled versions (or only old ones) are provided. It’s better to have them in [Homebrew/core](https://github.com/Homebrew/homebrew-core) so users don’t get perpetually outdated versions. See [`gedit`](https://github.com/Homebrew/homebrew-cask/pull/23360) for example.
-+ The app has been rejected before due to an issue we cannot fix, and the new submission doesn’t fix that. An example would be [the first submission of `soapui`](https://github.com/Homebrew/homebrew-cask/pull/4939), whose installation problems were not fixed in the two subsequent submissions ([#9969](https://github.com/Homebrew/homebrew-cask/pull/9969), [#10606](https://github.com/Homebrew/homebrew-cask/pull/10606)).
++ The app is both open-source and CLI-only (i.e. it only uses the `binary` artifact). In that case, and [in the spirit of deduplication](https://github.com/ungtb10d/homebrew-cask/issues/15603), submit it first to [Homebrew/core](https://github.com/ungtb10d/homebrew-core) as a formula that builds from source. If it is rejected, you may then try again as a cask (link us to the issue so we can see the discussion and reasoning for rejection).
++ The app is open-source and has a GUI but no compiled versions (or only old ones) are provided. It’s better to have them in [Homebrew/core](https://github.com/ungtb10d/homebrew-core) so users don’t get perpetually outdated versions. See [`gedit`](https://github.com/ungtb10d/homebrew-cask/pull/23360) for example.
++ The app has been rejected before due to an issue we cannot fix, and the new submission doesn’t fix that. An example would be [the first submission of `soapui`](https://github.com/ungtb10d/homebrew-cask/pull/4939), whose installation problems were not fixed in the two subsequent submissions ([#9969](https://github.com/ungtb10d/homebrew-cask/pull/9969), [#10606](https://github.com/ungtb10d/homebrew-cask/pull/10606)).
 + The Cask is a duplicate. These submissions mostly occur when the [token reference](https://docs.brew.sh/Cask-Cookbook#token-reference) was not followed.
 + The download URL for the app is both behind a login/registration form and from a host that differs from the homepage, meaning users can’t easily verify its authenticity.
-+ The Cask is for an unmaintained app (no releases in the last year, or [explicitly discontinued](https://github.com/Homebrew/homebrew-cask/pull/22699)).
++ The Cask is for an unmaintained app (no releases in the last year, or [explicitly discontinued](https://github.com/ungtb10d/homebrew-cask/pull/22699)).
 + The Cask is for an app that is too obscure. Examples:
   + An app from a code repository that is not notable enough (under 30 forks, 30 watchers, 75 stars).
-  + [Electronic Identification (eID) software](https://github.com/Homebrew/homebrew-cask/issues/59021).
+  + [Electronic Identification (eID) software](https://github.com/ungtb10d/homebrew-cask/issues/59021).
 + The Cask is for an app with no information on the homepage (example: a GitHub repository without a README).
-+ The author has [specifically asked us not to include it](https://github.com/Homebrew/homebrew-cask/pull/5342).
-+ The Cask requires [SIP to be disabled](https://github.com/Homebrew/homebrew-cask/pull/41890) to be installed and/or used.
++ The author has [specifically asked us not to include it](https://github.com/ungtb10d/homebrew-cask/pull/5342).
++ The Cask requires [SIP to be disabled](https://github.com/ungtb10d/homebrew-cask/pull/41890) to be installed and/or used.
 + The Cask is a `pkg` that requires [`allow_untrusted: true`](https://docs.brew.sh/Cask-Cookbook#pkg-allow_untrusted).
 
 Common reasons to reject a Cask from the main repo:

@@ -104,7 +104,7 @@ module Utils
       end
 
       def no_message_output?
-        # Used by Homebrew/install
+        # Used by ungtb10d/install
         ENV["HOMEBREW_NO_ANALYTICS_MESSAGE_OUTPUT"].present?
       end
 

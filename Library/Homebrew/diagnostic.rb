@@ -638,7 +638,7 @@ module Homebrew
 
         <<~EOS
           You have the following deprecated, official taps tapped:
-            Homebrew/homebrew-#{tapped_deprecated_taps.join("\n  Homebrew/homebrew-")}
+            ungtb10d/homebrew-#{tapped_deprecated_taps.join("\n  ungtb10d/homebrew-")}
           Untap them with `brew untap`.
         EOS
       end
@@ -723,7 +723,7 @@ module Homebrew
 
         repos = {
           "Homebrew/brew"          => HOMEBREW_REPOSITORY,
-          "Homebrew/homebrew-core" => CoreTap.instance.path,
+          "ungtb10d/homebrew-core" => CoreTap.instance.path,
         }
 
         %w[cask cask-drivers cask-fonts cask-versions].each do |tap|

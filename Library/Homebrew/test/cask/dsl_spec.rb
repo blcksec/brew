@@ -27,7 +27,7 @@ describe Cask::DSL, :cask do
         .*
         Unexpected method 'future_feature' called on Cask unexpected-method-cask\\.
         .*
-        https://github.com/Homebrew/homebrew-cask#reporting-bugs
+        https://github.com/ungtb10d/homebrew-cask#reporting-bugs
       EOS
 
       expect {

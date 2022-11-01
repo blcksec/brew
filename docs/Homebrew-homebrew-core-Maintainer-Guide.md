@@ -1,4 +1,4 @@
-# Homebrew/homebrew-core Maintainer Guide
+# ungtb10d/homebrew-core Maintainer Guide
 
 ## Quick merge checklist
 
@@ -137,9 +137,9 @@ transparency for contributors in addition to the
 
 - previously opened active PRs, as we would like to be fair to contributors who came first
 - patches/`inreplace` that have been applied to upstream and can be removed
-- comments in formula around `url`, as we do skip some versions (for example [vim](https://github.com/Homebrew/homebrew-core/blob/359dbb190bb3776c4d6a1f603a271dd8f186f077/Formula/vim.rb#L4) or [v8](https://github.com/Homebrew/homebrew-core/blob/359dbb190bb3776c4d6a1f603a271dd8f186f077/Formula/v8.rb#L4))
-- vendored resources that need updates (for example [emscripten](https://github.com/Homebrew/homebrew-core/commit/57126ac765c3ac5201ce53bcdebf7a0e19071eba))
-- vendored dependencies (for example [certbot](https://github.com/Homebrew/homebrew-core/pull/42966/files))
+- comments in formula around `url`, as we do skip some versions (for example [vim](https://github.com/ungtb10d/homebrew-core/blob/359dbb190bb3776c4d6a1f603a271dd8f186f077/Formula/vim.rb#L4) or [v8](https://github.com/ungtb10d/homebrew-core/blob/359dbb190bb3776c4d6a1f603a271dd8f186f077/Formula/v8.rb#L4))
+- vendored resources that need updates (for example [emscripten](https://github.com/ungtb10d/homebrew-core/commit/57126ac765c3ac5201ce53bcdebf7a0e19071eba))
+- vendored dependencies (for example [certbot](https://github.com/ungtb10d/homebrew-core/pull/42966/files))
 - stable/announced release
   - some teams use odd minor release number for tests and even for stable releases
   - other teams drop new version with minor release 0 but promote it to stable only after a few minor releases

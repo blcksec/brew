@@ -22,4 +22,4 @@ Alternative instructions using `pr-pull`:
 The exact atom may be different.
 
 This can be caused by passing the obsolete `-s` flag to the linker and can be
-fixed like [this](https://github.com/Homebrew/homebrew-core/commit/c4ad981d788b21a406a6efe7748f2922986919a8).
+fixed like [this](https://github.com/ungtb10d/homebrew-core/commit/c4ad981d788b21a406a6efe7748f2922986919a8).

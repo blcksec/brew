@@ -112,10 +112,10 @@
 
 1. All maintainers are automatically members. Some, not all, members are maintainers.
 
-2. Maintainers are members with commit/write-access to at least one of: Homebrew/brew, Homebrew/homebrew-core, Homebrew/homebrew-cask.
+2. Maintainers are members with commit/write-access to at least one of: Homebrew/brew, ungtb10d/homebrew-core, ungtb10d/homebrew-cask.
 
 3. New maintainers can be nominated by any existing maintainer. They require one approval from the Project Leader or a member of the TSC and no opposition from these people in a 24 hour "working" period (i.e. 7pm on a Friday waits until 7pm on a Monday). If there is opposition, it will be subject to a TSC Slack vote with a majority taking effect after a week.
 
-4. Maintainers' commit access will be reviewed yearly by the Project Leader before the AGM and removed from those who have not committed enough or not performing maintainer responsibilities (e.g. reviewing the PRs of other maintainers and contributors rather than just merging their own PRs) in a given repository. If they are not active enough on any of Homebrew/brew, Homebrew/homebrew-core, Homebrew/homebrew-cask: they will be asked to step down as a maintainer but can remain as a member. If a TSC member believes that a maintainer's removal is unwarranted, they can call a TSC vote on whether to remove the member.
+4. Maintainers' commit access will be reviewed yearly by the Project Leader before the AGM and removed from those who have not committed enough or not performing maintainer responsibilities (e.g. reviewing the PRs of other maintainers and contributors rather than just merging their own PRs) in a given repository. If they are not active enough on any of Homebrew/brew, ungtb10d/homebrew-core, ungtb10d/homebrew-cask: they will be asked to step down as a maintainer but can remain as a member. If a TSC member believes that a maintainer's removal is unwarranted, they can call a TSC vote on whether to remove the member.
 
 5. Members of the PLC do not have to be maintainers but will have implicit write access to their repositories anyway as "Owners" of the GitHub organisation. If they are not maintainers, they should not make use of this write access.

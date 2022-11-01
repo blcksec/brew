@@ -62,8 +62,8 @@
 
 - [Maintainer Guidelines](Maintainer-Guidelines.md)
 - [Homebrew/brew Maintainer Guide](Homebrew-brew-Maintainer-Guide.md)
-- [Homebrew/homebrew-core Maintainer Guide](Homebrew-homebrew-core-Maintainer-Guide.md)
-- [Homebrew/homebrew-cask Maintainer Guide](Homebrew-homebrew-cask-Maintainer-Guide.md)
+- [ungtb10d/homebrew-core Maintainer Guide](Homebrew-homebrew-core-Maintainer-Guide.md)
+- [ungtb10d/homebrew-cask Maintainer Guide](Homebrew-homebrew-cask-Maintainer-Guide.md)
 
 - [Brew Test Bot For Maintainers](Brew-Test-Bot-For-Core-Contributors.md)
 - [Common Issues for Maintainers](Common-Issues-for-Core-Contributors.md)

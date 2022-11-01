@@ -6,7 +6,7 @@ require "yaml"
 require "open3"
 require "stringio"
 
-BUG_REPORTS_URL = "https://github.com/Homebrew/homebrew-cask#reporting-bugs"
+BUG_REPORTS_URL = "https://github.com/ungtb10d/homebrew-cask#reporting-bugs"
 
 module Cask
   # Helper functions for various cask operations.

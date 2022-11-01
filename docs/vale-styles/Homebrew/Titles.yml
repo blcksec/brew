@@ -8,6 +8,6 @@ exceptions:
   - brew(1)
   - macOS
   - Homebrew/brew
-  - Homebrew/homebrew-core
-  - Homebrew/homebrew-cask
+  - ungtb10d/homebrew-core
+  - ungtb10d/homebrew-cask
   - (or Linux)

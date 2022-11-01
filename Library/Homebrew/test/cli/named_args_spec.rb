@@ -333,7 +333,7 @@ describe Homebrew::CLI::NamedArgs do
 
   describe "#to_installed_taps" do
     before do
-      (HOMEBREW_REPOSITORY/"Library/Taps/homebrew/homebrew-foo").mkpath
+      (HOMEBREW_REPOSITORY/"Library/Taps/ungtb10d/homebrew-foo").mkpath
     end
 
     it "returns installed taps" do

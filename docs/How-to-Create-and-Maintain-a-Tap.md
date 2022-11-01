@@ -22,12 +22,12 @@ repository’s root. The first available directory is used, other locations will
 be ignored. We recommend use of subdirectories because it makes the repository
 organisation easier to grasp, and top-level files are not mixed with formulae.
 
-See [homebrew/core](https://github.com/Homebrew/homebrew-core) for an example of
+See [homebrew/core](https://github.com/ungtb10d/homebrew-core) for an example of
 a tap with a `Formula` subdirectory.
 
 ## Naming your formulae to avoid clashes
 
-If your formulae have the same name as Homebrew/homebrew-core formulae they cannot be installed side-by-side. If you wish to create a different version of a formula that's in Homebrew/homebrew-core (e.g. with `option`s) consider giving it a different name e.g. `nginx-full` for more fully-featured `nginx` formula. This will allow both `nginx` and `nginx-full` to be installed at the same time (assuming one is `keg_only` or the linked files do not clash).
+If your formulae have the same name as ungtb10d/homebrew-core formulae they cannot be installed side-by-side. If you wish to create a different version of a formula that's in ungtb10d/homebrew-core (e.g. with `option`s) consider giving it a different name e.g. `nginx-full` for more fully-featured `nginx` formula. This will allow both `nginx` and `nginx-full` to be installed at the same time (assuming one is `keg_only` or the linked files do not clash).
 
 ### Installing
 
@@ -68,7 +68,7 @@ Casks can also be installed from a tap.
 Casks can be included in taps with formulae, or in a tap with just casks.
 Place any cask files you wish to make available in a `Casks` directory at the top level of your tap.
 
-See [homebrew/cask](https://github.com/Homebrew/homebrew-cask) for an example of a tap with a `Casks` subdirectory.
+See [homebrew/cask](https://github.com/ungtb10d/homebrew-cask) for an example of a tap with a `Casks` subdirectory.
 
 ### Naming
 
@@ -80,13 +80,13 @@ This can be achieved by e.g. prepending the cask name with your github username:
 You can provide your tap users with custom `brew` commands by adding them in a
 `cmd` subdirectory. [Read more on external commands](External-Commands.md).
 
-See [homebrew/aliases](https://github.com/Homebrew/homebrew-aliases) for an
+See [homebrew/aliases](https://github.com/ungtb10d/homebrew-aliases) for an
 example of a tap with external commands.
 
 ## Official Vendor Taps
 
-Some upstream software providers like to package their software in their own Homebrew tap. When their software is [eligible for Homebrew/homebrew-core](Acceptable-Formulae.md) we prefer to maintain software there for ease of updates, improved discoverability and use of tools such as [formulae.brew.sh](https://formulae.brew.sh).
+Some upstream software providers like to package their software in their own Homebrew tap. When their software is [eligible for ungtb10d/homebrew-core](Acceptable-Formulae.md) we prefer to maintain software there for ease of updates, improved discoverability and use of tools such as [formulae.brew.sh](https://formulae.brew.sh).
 
-We are not willing to remove software packaged in Homebrew/homebrew-core in favour of an upstream tap. We are not willing to instruct users in our formulae to use your formulae instead. If upstream projects have issues with how Homebrew packages your software: please file issues (or, ideally, pull requests) to address these problems.
+We are not willing to remove software packaged in ungtb10d/homebrew-core in favour of an upstream tap. We are not willing to instruct users in our formulae to use your formulae instead. If upstream projects have issues with how Homebrew packages your software: please file issues (or, ideally, pull requests) to address these problems.
 
 There’s an increasing desire in commercial open source about “maintaining control” e.g. defining exactly what binaries are shipping to users. Not supporting users (or even software distributions) to build-from-source is antithetical to the values of open source. If you think Homebrew's perspective is annoying on this: try and see how Debian responds to requests to ship your binaries.

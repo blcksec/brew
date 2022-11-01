@@ -11,7 +11,7 @@ source "${HOMEBREW_LIBRARY}/Homebrew/utils/lock.sh"
 
 VENDOR_DIR="${HOMEBREW_LIBRARY}/Homebrew/vendor"
 
-# Built from https://github.com/Homebrew/homebrew-portable-ruby.
+# Built from https://github.com/ungtb10d/homebrew-portable-ruby.
 if [[ -n "${HOMEBREW_MACOS}" ]]
 then
   if [[ "${HOMEBREW_PHYSICAL_PROCESSOR}" == "x86_64" ]] ||
@@ -53,7 +53,7 @@ then
   fi
   ruby_URLs+=(
     "https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:${ruby_SHA}"
-    "https://github.com/Homebrew/homebrew-portable-ruby/releases/download/2.6.8_1/${ruby_FILENAME}"
+    "https://github.com/ungtb10d/homebrew-portable-ruby/releases/download/2.6.8_1/${ruby_FILENAME}"
   )
   ruby_URL="${ruby_URLs[0]}"
 fi

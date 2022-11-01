@@ -202,7 +202,7 @@ describe Utils::Git do
     context "when git is available" do
       it "returns true when git remote exists", :needs_network do
         git = HOMEBREW_SHIMS_PATH/"shared/git"
-        url = "https://github.com/Homebrew/homebrew.github.io"
+        url = "https://github.com/ungtb10d/homebrew.github.io"
         repo = HOMEBREW_CACHE/"hey"
         repo.mkpath
 

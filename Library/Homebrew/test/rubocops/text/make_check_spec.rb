@@ -6,7 +6,7 @@ require "rubocops/lines"
 describe RuboCop::Cop::FormulaAuditStrict::MakeCheck do
   subject(:cop) { described_class.new }
 
-  let(:path) { Tap::TAP_DIRECTORY/"homebrew/homebrew-core" }
+  let(:path) { Tap::TAP_DIRECTORY/"ungtb10d/homebrew-core" }
 
   before do
     path.mkpath

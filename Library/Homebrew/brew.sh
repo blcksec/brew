@@ -420,10 +420,10 @@ then
   HOMEBREW_USER_AGENT_VERSION="2.X.Y"
 fi
 
-HOMEBREW_CORE_REPOSITORY="${HOMEBREW_LIBRARY}/Taps/homebrew/homebrew-core"
+HOMEBREW_CORE_REPOSITORY="${HOMEBREW_LIBRARY}/Taps/ungtb10d/homebrew-core"
 # Used in --version.sh
 # shellcheck disable=SC2034
-HOMEBREW_CASK_REPOSITORY="${HOMEBREW_LIBRARY}/Taps/homebrew/homebrew-cask"
+HOMEBREW_CASK_REPOSITORY="${HOMEBREW_LIBRARY}/Taps/ungtb10d/homebrew-cask"
 
 case "$*" in
   --version | -v)
@@ -738,7 +738,7 @@ then
 fi
 export HOMEBREW_BREW_GIT_REMOTE
 
-export HOMEBREW_CORE_DEFAULT_GIT_REMOTE="https://github.com/Homebrew/homebrew-core"
+export HOMEBREW_CORE_DEFAULT_GIT_REMOTE="https://github.com/ungtb10d/homebrew-core"
 if [[ -z "${HOMEBREW_CORE_GIT_REMOTE}" ]]
 then
   HOMEBREW_CORE_GIT_REMOTE="${HOMEBREW_CORE_DEFAULT_GIT_REMOTE}"

@@ -1,6 +1,6 @@
 #:  * `--version`, `-v`
 #:
-#:  Print the version numbers of Homebrew, Homebrew/homebrew-core and Homebrew/homebrew-cask (if tapped) to standard output.
+#:  Print the version numbers of Homebrew, ungtb10d/homebrew-core and ungtb10d/homebrew-cask (if tapped) to standard output.
 
 # HOMEBREW_CORE_REPOSITORY, HOMEBREW_CASK_REPOSITORY, HOMEBREW_VERSION are set by brew.sh
 # shellcheck disable=SC2154
@@ -27,10 +27,10 @@ version_string() {
 
 homebrew-version() {
   echo "Homebrew ${HOMEBREW_VERSION}"
-  echo "Homebrew/homebrew-core $(version_string "${HOMEBREW_CORE_REPOSITORY}")"
+  echo "ungtb10d/homebrew-core $(version_string "${HOMEBREW_CORE_REPOSITORY}")"
 
   if [[ -d "${HOMEBREW_CASK_REPOSITORY}" ]]
   then
-    echo "Homebrew/homebrew-cask $(version_string "${HOMEBREW_CASK_REPOSITORY}")"
+    echo "ungtb10d/homebrew-cask $(version_string "${HOMEBREW_CASK_REPOSITORY}")"
   fi
 }

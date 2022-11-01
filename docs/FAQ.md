@@ -36,7 +36,7 @@ Note that pinned, outdated formulae that another formula depends on need to be u
 
 ## How do I uninstall Homebrew?
 
-To uninstall Homebrew, run the [uninstall script from the Homebrew/install repository](https://github.com/homebrew/install#uninstall-homebrew).
+To uninstall Homebrew, run the [uninstall script from the ungtb10d/install repository](https://github.com/ungtb10d/install#uninstall-homebrew).
 
 ## How do I keep old versions of a formula when upgrading?
 
@@ -74,7 +74,7 @@ Read our [contribution guidelines](https://github.com/Homebrew/brew/blob/HEAD/CO
 
 ## Why do you compile everything?
 
-Homebrew provides pre-built binary packages for many formulae. These are referred to as [bottles](Bottles.md) and are available at <https://github.com/Homebrew/homebrew-core/packages>.
+Homebrew provides pre-built binary packages for many formulae. These are referred to as [bottles](Bottles.md) and are available at <https://github.com/ungtb10d/homebrew-core/packages>.
 
 If available, bottled binaries will be used by default except under the following conditions:
 
@@ -183,7 +183,7 @@ In the resulting dialog, click the *Open* button to have macOS permanently allow
 
 <img src="https://i.imgur.com/xppa4Qv.png" width="532" alt="Gatekeeper message">
 
-Alternatively, you may provide the [`--no-quarantine` flag](https://github.com/Homebrew/homebrew-cask/blob/HEAD/USAGE.md#options) at install time to not add this feature to a specific app.
+Alternatively, you may provide the [`--no-quarantine` flag](https://github.com/ungtb10d/homebrew-cask/blob/HEAD/USAGE.md#options) at install time to not add this feature to a specific app.
 
 ## Why aren’t some apps included during `brew upgrade`?
 
@@ -202,7 +202,7 @@ There are a few ideas to fix this problem:
 * Try to prevent the software’s automated updates. It wouldn’t be a universal solution and may cause it to break. Most software on Homebrew Cask is closed-source, so we’d be guessing. This is also why pinning casks to a version isn’t available.
 * Try to extract the installed software’s version and compare it to the cask, deciding what to do at that time. It’d be a complicated solution that would break other parts of our methodology, such as using versions to interpolate `url` values (a definite win for maintainability). This solution also isn’t universal, as many software developers are inconsistent in their versioning schemes (and app bundles are meant to have two version strings) and it doesn’t work for all types of software we support.
 
-So we let software be. Anything installed with Homebrew Cask should behave the same as if it were installed manually. But since we also want to support software that doesn’t self-upgrade, we add [`auto_updates true`](https://github.com/Homebrew/homebrew-cask/blob/62c0495b254845a481dacac6ea7c8005e27a3fb0/Casks/alfred.rb#L10) to casks for software that does, which excludes them from `brew upgrade`.
+So we let software be. Anything installed with Homebrew Cask should behave the same as if it were installed manually. But since we also want to support software that doesn’t self-upgrade, we add [`auto_updates true`](https://github.com/ungtb10d/homebrew-cask/blob/62c0495b254845a481dacac6ea7c8005e27a3fb0/Casks/alfred.rb#L10) to casks for software that does, which excludes them from `brew upgrade`.
 
 Casks which use [`version :latest`](https://docs.brew.sh/Cask-Cookbook#version-latest) are also excluded, because we have no way to track their installed version. It helps to ask the developers of such software to provide versioned releases (i.e. include the version in the path of the download `url`).
 

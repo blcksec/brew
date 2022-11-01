@@ -31,7 +31,7 @@ module Homebrew
   def update_test
     args = update_test_args.parse
 
-    # Avoid `update-report.rb` tapping Homebrew/homebrew-core
+    # Avoid `update-report.rb` tapping ungtb10d/homebrew-core
     ENV["HOMEBREW_UPDATE_TEST"] = "1"
 
     # Avoid accidentally updating when we don't expect it.

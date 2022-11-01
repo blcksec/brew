@@ -26,9 +26,9 @@ homebrew-prefix() {
   [[ -z "${formula}" ]] && echo "${HOMEBREW_PREFIX}" && return 0
 
   local formula_path
-  if [[ -f "${HOMEBREW_REPOSITORY}/Library/Taps/homebrew/homebrew-core/Formula/${formula}.rb" ]]
+  if [[ -f "${HOMEBREW_REPOSITORY}/Library/Taps/ungtb10d/homebrew-core/Formula/${formula}.rb" ]]
   then
-    formula_path="${HOMEBREW_REPOSITORY}/Library/Taps/homebrew/homebrew-core/Formula/${formula}.rb"
+    formula_path="${HOMEBREW_REPOSITORY}/Library/Taps/ungtb10d/homebrew-core/Formula/${formula}.rb"
   else
     formula_path="$(
       shopt -s nullglob

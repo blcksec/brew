@@ -4,7 +4,7 @@ Is your favorite software missing from Homebrew? Then you're the perfect person 
 
 If you want to add software that is either closed source or a GUI-only program, you will want to follow the guide for [Casks](#casks). Otherwise follow the guide for [Formulae](#formulae) (see also: [Homebrew Terminology](Formula-Cookbook.md#homebrew-terminology)).
 
-Before you start, please check the open pull requests for [Homebrew/homebrew-core](https://github.com/Homebrew/homebrew-core/pulls) or [Homebrew/homebrew-cask](https://github.com/Homebrew/homebrew-cask/pulls) to make sure no one else beat you to the punch.
+Before you start, please check the open pull requests for [ungtb10d/homebrew-core](https://github.com/ungtb10d/homebrew-core/pulls) or [ungtb10d/homebrew-cask](https://github.com/ungtb10d/homebrew-cask/pulls) to make sure no one else beat you to the punch.
 
 Next, you will want to go through the [Acceptable Formulae](Acceptable-Formulae.md) or [Acceptable Casks](Acceptable-Casks.md) documentation to determine if the software is an appropriate addition to Homebrew. If you are creating a formula for an alternative version of software already in Homebrew (e.g. a major/minor version that differs significantly from the existing version), be sure to read the [Versions](Versions.md) documentation to understand versioned formulae requirements.
 
@@ -34,7 +34,7 @@ If you're stuck, ask for help on GitHub or [Homebrew/discussions](https://github
 
 ### Submitting the formula
 
-You're finally ready to submit your formula to the [homebrew-core](https://github.com/Homebrew/homebrew-core) repository. If you haven't done this before, you can refer to the [How to Open a Pull Request](How-To-Open-a-Homebrew-Pull-Request.md) documentation for help. Maintainers will review the pull request and provide feedback about any areas that need to be addressed before the formula can be added to Homebrew.
+You're finally ready to submit your formula to the [homebrew-core](https://github.com/ungtb10d/homebrew-core) repository. If you haven't done this before, you can refer to the [How to Open a Pull Request](How-To-Open-a-Homebrew-Pull-Request.md) documentation for help. Maintainers will review the pull request and provide feedback about any areas that need to be addressed before the formula can be added to Homebrew.
 
 If you've made it this far, congratulations on submitting a Homebrew formula! We appreciate the hard work you put into this and you can take satisfaction in knowing that your work may benefit other Homebrew users as well.
 
@@ -43,11 +43,11 @@ If you've made it this far, congratulations on submitting a Homebrew formula! We
 **Note:** Before taking the time to craft a new cask:
 
 * make sure it can be accepted by checking the [Rejected Casks FAQ](Acceptable-Casks.md#rejected-casks), and
-* check that the cask was not [already refused](https://github.com/Homebrew/homebrew-cask/search?q=is%3Aclosed&type=Issues).
+* check that the cask was not [already refused](https://github.com/ungtb10d/homebrew-cask/search?q=is%3Aclosed&type=Issues).
 
 ### Writing the cask
 
-Making a new cask is easy. Follow the directions in [Getting Set Up To Contribute](https://github.com/Homebrew/homebrew-cask/blob/HEAD/CONTRIBUTING.md#getting-set-up-to-contribute) to begin.
+Making a new cask is easy. Follow the directions in [Getting Set Up To Contribute](https://github.com/ungtb10d/homebrew-cask/blob/HEAD/CONTRIBUTING.md#getting-set-up-to-contribute) to begin.
 
 #### Examples
 
@@ -186,7 +186,7 @@ Additional [`artifact` stanzas](Cask-Cookbook.md#at-least-one-artifact-stanza-is
 
 #### Cask token details
 
-If a token conflicts with an already-existing cask, authors should manually make the new token unique by prepending the vendor name. Example: [unison.rb](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/unison.rb) and [panic-unison.rb](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/panic-unison.rb).
+If a token conflicts with an already-existing cask, authors should manually make the new token unique by prepending the vendor name. Example: [unison.rb](https://github.com/ungtb10d/homebrew-cask/blob/HEAD/Casks/unison.rb) and [panic-unison.rb](https://github.com/ungtb10d/homebrew-cask/blob/HEAD/Casks/panic-unison.rb).
 
 If possible, avoid creating tokens that differ only by the placement of hyphens.
 
@@ -238,7 +238,7 @@ brew style --fix my-new-cask
 
 Keep in mind that all these checks will be made when you submit your PR, so by doing them in advance you’re saving everyone a lot of time and trouble.
 
-If your application and Homebrew Cask do not work well together, feel free to [file an issue](https://github.com/Homebrew/homebrew-cask#reporting-bugs) after checking out open issues.
+If your application and Homebrew Cask do not work well together, feel free to [file an issue](https://github.com/ungtb10d/homebrew-cask#reporting-bugs) after checking out open issues.
 
 ### Submitting the cask
 
@@ -249,7 +249,7 @@ See the [Acceptable Casks documentation](Acceptable-Casks.md#finding-a-home-for-
 Hop into your Tap and check to make sure your new cask is there:
 
 ```bash
-$ cd "$(brew --repository)"/Library/Taps/homebrew/homebrew-cask
+$ cd "$(brew --repository)"/Library/Taps/ungtb10d/homebrew-cask
 $ git status
 # On branch master
 # Untracked files:
@@ -330,11 +330,11 @@ The `git push` command prints a suggestion for how to create a pull request:
 
 ##### b) use suggestion from GitHub's website
 
-Now go to the [`homebrew-cask` GitHub repository](https://github.com/Homebrew/homebrew-cask). GitHub will often show your `my-new-cask-branch` branch with a handy button to `Compare & pull request`.
+Now go to the [`homebrew-cask` GitHub repository](https://github.com/ungtb10d/homebrew-cask). GitHub will often show your `my-new-cask-branch` branch with a handy button to `Compare & pull request`.
 
 ##### c) manually create a pull request on GitHub
 
-Otherwise, click the `Contribute > Open pull request` button and choose to `compare across forks`. The base fork should be `Homebrew/homebrew-cask @ master`, and the head fork should be `my-github-username/homebrew-cask @ my-new-cask-branch`. You can also add any further comments to your pull request at this stage.
+Otherwise, click the `Contribute > Open pull request` button and choose to `compare across forks`. The base fork should be `ungtb10d/homebrew-cask @ master`, and the head fork should be `my-github-username/homebrew-cask @ my-new-cask-branch`. You can also add any further comments to your pull request at this stage.
 
 ##### Congratulations!
 
@@ -345,7 +345,7 @@ You are done now, and your cask should be pulled in or otherwise noticed in a wh
 After your pull request is submitted, you should get yourself back onto `master`, so that `brew update` will pull down new casks properly:
 
 ```bash
-cd "$(brew --repository)"/Library/Taps/homebrew/homebrew-cask
+cd "$(brew --repository)"/Library/Taps/ungtb10d/homebrew-cask
 git checkout master
 ```
 

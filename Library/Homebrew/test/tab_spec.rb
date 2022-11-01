@@ -165,7 +165,7 @@ describe Tab do
     it "parses a Tab from a file" do
       path = Pathname.new("#{TEST_FIXTURE_DIR}/receipt.json")
       tab = described_class.from_file(path)
-      source_path = "/usr/local/Library/Taps/homebrew/homebrew-core/Formula/foo.rb"
+      source_path = "/usr/local/Library/Taps/ungtb10d/homebrew-core/Formula/foo.rb"
       runtime_dependencies = [{ "full_name" => "foo", "version" => "1.0" }]
       changed_files = %w[INSTALL_RECEIPT.json bin/foo]
 
@@ -193,7 +193,7 @@ describe Tab do
     it "parses a Tab from a file" do
       path = Pathname.new("#{TEST_FIXTURE_DIR}/receipt.json")
       tab = described_class.from_file_content(path.read, path)
-      source_path = "/usr/local/Library/Taps/homebrew/homebrew-core/Formula/foo.rb"
+      source_path = "/usr/local/Library/Taps/ungtb10d/homebrew-core/Formula/foo.rb"
       runtime_dependencies = [{ "full_name" => "foo", "version" => "1.0" }]
       changed_files = %w[INSTALL_RECEIPT.json bin/foo]
 

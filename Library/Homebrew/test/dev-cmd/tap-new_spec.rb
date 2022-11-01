@@ -15,7 +15,7 @@ describe "brew tap-new" do
       .and output(%r{homebrew/foo}).to_stdout
       .and not_to_output.to_stderr
 
-    expect(HOMEBREW_LIBRARY/"Taps/homebrew/homebrew-foo/README.md").to exist
-    expect(HOMEBREW_LIBRARY/"Taps/homebrew/homebrew-foo/.github/workflows/tests.yml").to exist
+    expect(HOMEBREW_LIBRARY/"Taps/ungtb10d/homebrew-foo/README.md").to exist
+    expect(HOMEBREW_LIBRARY/"Taps/ungtb10d/homebrew-foo/.github/workflows/tests.yml").to exist
   end
 end

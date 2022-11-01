@@ -868,7 +868,7 @@ If *`user`*`/`*`repo`* are provided, display where tap *`user`*`/`*`repo`*'s dir
 
 ### `--version`, `-v`
 
-Print the version numbers of Homebrew, Homebrew/homebrew-core and Homebrew/homebrew-cask (if tapped) to standard output.
+Print the version numbers of Homebrew, ungtb10d/homebrew-core and ungtb10d/homebrew-cask (if tapped) to standard output.
 
 ## DEVELOPER COMMANDS
 
@@ -2045,9 +2045,9 @@ example, run `export HOMEBREW_NO_INSECURE_REDIRECT=1` rather than just
   <br>If set, force colour output on non-TTY outputs.
 
 - `HOMEBREW_CORE_GIT_REMOTE`
-  <br>Use this URL as the Homebrew/homebrew-core `git`(1) remote.
+  <br>Use this URL as the ungtb10d/homebrew-core `git`(1) remote.
 
-  *Default:* `https://github.com/Homebrew/homebrew-core`.
+  *Default:* `https://github.com/ungtb10d/homebrew-core`.
 
 - `HOMEBREW_CURLRC`
   <br>If set, do not pass `--disable` when invoking `curl`(1), which disables the use of `curlrc`.
@@ -2314,11 +2314,11 @@ See our issues on GitHub:
   * **Homebrew/brew**:
     <br><https://github.com/Homebrew/brew/issues>
 
-  * **Homebrew/homebrew-core**:
-    <br><https://github.com/Homebrew/homebrew-core/issues>
+  * **ungtb10d/homebrew-core**:
+    <br><https://github.com/ungtb10d/homebrew-core/issues>
 
-  * **Homebrew/homebrew-cask**:
-    <br><https://github.com/Homebrew/homebrew-cask/issues>
+  * **ungtb10d/homebrew-cask**:
+    <br><https://github.com/ungtb10d/homebrew-cask/issues>
 
 [SYNOPSIS]: #SYNOPSIS "SYNOPSIS"
 [DESCRIPTION]: #DESCRIPTION "DESCRIPTION"
